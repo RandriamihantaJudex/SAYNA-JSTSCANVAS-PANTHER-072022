@@ -85,4 +85,14 @@ const AddEventClick = () => {
   }
 };
 AddEventClick();
-console.log(parent.children[0].children[1].children[0].innerHTML);
+
+let personnage2 = document.querySelector(".personnage");
+function suck(params) {
+  if(window.scrollY>personnage2.scrollY){
+    // personnage2.style.backgroundColor='red'
+    console.log(personnage2);
+  }
+}
+window.addEventListener('scroll',suck)
+
+

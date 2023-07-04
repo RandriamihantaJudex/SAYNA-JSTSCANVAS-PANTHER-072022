@@ -172,7 +172,7 @@ nav{
     align-items: center;
     justify-content: flex-end;
     animation: fadeIn 2s;
-    /* overflow-x: scroll; */
+    overflow-x: scroll;
     overflow-y: visible;
     scrollbar-width: none;
 }
