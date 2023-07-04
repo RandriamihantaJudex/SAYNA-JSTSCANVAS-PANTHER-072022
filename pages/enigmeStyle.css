@@ -1,0 +1,680 @@
+@font-face {
+  src: url("../fonts/BEYNO/BEYNO.ttf");
+  font-family: BEYNO;
+}
+@font-face {
+  src: url("../fonts/Cantarell-Bold.ttf");
+  font-family: Cantarell;
+}
+@font-face {
+  src: url("../fonts/PantheraRegular-MVZ9J.ttf");
+  font-family: Panthera;
+}
+@font-face {
+  src: url("../fonts/WakandaForever-Regular.ttf");
+  font-family: WakandaForever;
+}
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url("../Illustrations + Logo/All\ pages/arrière_plan.png");
+  animation: fadeIn 2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+h1 {
+  font-family: Panthera;
+  font-size: 42px;
+}
+h2 {
+  font-family: BEYNO;
+  padding: 0;
+  margin: 0;
+}
+p {
+  font-family: Cantarell;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.centrer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active {
+  text-decoration: underline;
+  color: #3d2da6;
+}
+.centrer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plein {
+  height: 100%;
+  width: 100%;
+}
+/* PARTIE NAVIGATION */
+
+header {
+  height: auto;
+  width: 100%;
+}
+nav {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.saynaXmarvel {
+  width: auto;
+  height: 50px;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 5;
+}
+.saynaXmarvel:hover {
+  filter: grayscale(100%) brightness(70%) sepia(50%) hue-rotate(-150deg)
+    saturate(500%) contrast(1);
+}
+.saynaXmarvel * {
+  margin-left: 3px;
+}
+.navigation {
+  width: 350px;
+  height: 50px;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: BEYNO;
+}
+.saynaXmarvel a {
+  display: flex;
+  align-items: center;
+}
+
+.principale {
+  height: 550px;
+  width: 100%;
+  display: flex;
+}
+.okoye {
+  width: 55%;
+  height: 100%;
+}
+
+.defi {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.caligraphe {
+  height: 350px;
+  width: 98%;
+  background-image: url("../Illustrations + Logo/Enigme/Pantherenigme2.png");
+  background-size: 100%;
+  background-position: center;
+  margin-bottom: -140px;
+  background-repeat: no-repeat;
+  border-bottom: solid #9e91b73a 2px;
+}
+.caligraphe img {
+  position: static;
+  height: 100%;
+  width: 100%;
+}
+.caligraphe div {
+  width: 70%;
+  height: 50%;
+  margin-top: 30px;
+}
+.caligraphe div p {
+  text-align: justify;
+  font-size: 10px;
+  font-weight: 100;
+  font-family: Cantarell;
+}
+.okoye .okPlein {
+  width: 100%;
+  height: 140%;
+}
+.ensemble h1 {
+  color: #9e91b7;
+  font-family: BEYNO;
+  font-size: 45px;
+}
+
+/* DEUXIEME PARTIE (FORMULAIRE) */
+
+.formulaire {
+  width: 100%;
+  height: auto;
+  margin-top: 150px;
+}
+.dechiffre {
+  height: 100px;
+  width: 100%;
+}
+.dechiffre p {
+  width: 100%;
+  font-family: WakandaForever;
+  font-size: 20px;
+  word-spacing: 15px;
+  color: #9e91b7;
+  text-align: start;
+}
+.deuxieme {
+  height: 400px;
+  margin-left: 15%;
+  display: flex;
+}
+.gauche {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gauche .bas h2 {
+  font-family: Cantarell;
+  font-size: 13px;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.paraEnigme {
+  margin-top: 12px;
+  font-size: 10px;
+  font-family: Cantarell;
+  font-weight: 100;
+  color: white;
+}
+.traduction {
+  font-family: Cantarell;
+  font-weight: 100;
+  font-size: 12px;
+}
+.forever {
+  font-family: WakandaForever;
+  margin-left: 5px;
+  font-size: 12px;
+}
+.bas {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+.gauche div input {
+  border-radius: 17px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0);
+  border: solid #9e91b7 1.3px;
+  height: 35px;
+  color: #9e91b7;
+  padding-left: 10%;
+}
+.deuxiemeCopie {
+  display: flex;
+  justify-content: start;
+  margin-left: 15%;
+}
+.bouton {
+  width: 34%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.bouton button {
+  border: none;
+  border-radius: 20px;
+  width: 120px;
+  padding: 10px 15px;
+  background-color: white;
+  color: #021740;
+  cursor: pointer;
+  font-family: Cantarell;
+  font-size: 11px;
+}
+.bouton button:hover {
+  box-shadow: 0 0 20px #f2cef2;
+}
+
+.droite {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+}
+.fond {
+  height: 300px;
+  width: 90%;
+  background-image: url("../Illustrations + Logo/Enigme/Pantherenigme2.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  text-align: justify;
+  font-size: 10px;
+  font-weight: 100;
+  font-family: Cantarell;
+}
+.fond div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.marge {
+  margin-bottom: 15px;
+}
+.ajuster {
+  display: flex;
+  width: auto;
+  color: #9e91b7;
+  display: flex;
+  align-items: center;
+}
+.titreEnigme {
+  width: auto;
+  color: #9e91b7;
+  border-bottom: solid #9e91b7 1px;
+  font-size: 19px;
+}
+.spanTitre {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 19px;
+  font-family: cantarel;
+}
+.aMOi {
+  width: auto;
+}
+
+/* PARTIE FOOTER */
+
+footer {
+  height: 500px;
+  width: 100%;
+  background: linear-gradient(180deg, #07338c 0%, #021740 20%);
+  /* background-image: url("../Illustrations + Logo/All\ pages/back_footer.png"); */
+}
+.elements {
+  height: 350px;
+  width: 70%;
+  display: flex;
+}
+.prem1 {
+  width: 40%;
+  height: 100%;
+  cursor: pointer;
+}
+.prem1:hover {
+  scale: 1.1;
+}
+
+.prem2 {
+  width: 60%;
+  height: 100%;
+  color: white;
+}
+.haut {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.basse {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.cinq {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Cantarell;
+}
+.fin {
+  display: flex;
+  align-items: flex-end;
+}
+.iconFooter {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.divCouleur {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: purple;
+}
+.finIcon {
+  height: 10px;
+  width: 10px;
+}
+.footerSayna {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+}
+.prem1 div {
+  margin-left: 0px;
+  height: 25px;
+}
+.prem1 div img {
+  height: 100%;
+}
+.prem1 div .x {
+  height: 50%;
+}
+.prem2 h1 {
+  font-family: Cantarell;
+  font-size: 20px;
+}
+.moitie {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: flex-start;
+  text-align: justify;
+}
+.moitie .retro {
+  font-family: Cantarell;
+  font-size: 12px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+.iconFooter img {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.iconFooter img:hover {
+  scale: 1.1;
+}
+.point {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: #3d2da6;
+  margin: 0px 4px;
+}
+.basChild {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.basChild p {
+  font-size: 12px;
+  font-family: Cantarell;
+}
+.espacement {
+  height: 150px;
+}
+
+.ConteneurPrincipale {
+  height: auto;
+  width: auto;
+  animation: fadeIn 2s;
+}
+.propos {
+  display: flex;
+  flex-direction: column;
+  font-family: Cantarell;
+}
+.propos a:hover {
+  text-decoration: underline;
+}
+.menuNav:hover {
+  text-decoration: underline;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn {
+  0% {
+    margin-left: -500px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+/* POPUP */
+
+.myPopUp {
+  position: fixed;
+  height: 350px;
+  width: 450px;
+  margin-top: 10%;
+  display: none;
+  justify-content: center;
+  background-color: #3017d4;
+  box-shadow: 0px 0px 30px 10px #3017d4;
+  border-radius: 7px;
+}
+.myPopUp div {
+  width: 85%;
+  margin-top: 15px;
+  height: 90%;
+  border-radius: 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.487) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  justify-content: space-evenly;
+}
+.myPopUp div h1 {
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+.myPopUp div button,.cubePop a {
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 17px;
+  border: none;
+  color: #3d2da6;
+  font-family: cantarell;
+  font-size: 12px;
+}
+.myPopUp div button,.cubePop a:hover {
+  box-shadow: 0px 0px 10px 0px white;
+  background-color: #fff;
+}
+.myPopUp2{
+  position: fixed;
+  height: 400px;
+  width: 470px;
+  margin-top: 10%;
+  display: none;
+  justify-content: center;
+  background-color: #3017d4;
+  box-shadow: 0px 0px 30px 10px #3017d4;
+  border-radius: 7px;
+}
+.cubePop{
+  width: 85%;
+  margin-top: 15px;
+  height: 90%;
+  border-radius: 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.487) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  justify-content: space-evenly;
+}
+.cubePop h2{
+  font-family: cantarell;
+  text-align: center;
+  font-size: 18px;
+  padding: 0 12%;
+}
+.cubePop a{
+  background-color: white;
+}
+.cubePop div{
+  width: 200px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.cubePop div div{
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+  font-family: cantarell;
+  font-size: 13px;
+}
+.cubePop div div p{
+  font-size: 25px;
+  font-weight: 900;
+}
+
+
+/* rendu responsive */
+
+@media (max-width: 920px) {
+  nav {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .saynaXmarvel {
+    margin: 0;
+  }
+  .navigation {
+    justify-content: space-evenly;
+    margin: 0;
+  }
+
+  .principale .okoye {
+    display: none;
+  }
+  .principale {
+    align-items: center;
+    justify-content: center;
+  }
+  .defi {
+    width: 95%;
+  }
+  .defi h1 {
+    text-align: center;
+  }
+  .defi p {
+    font-size: 9px;
+  }
+  .dechiffre {
+    margin: 0;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  .dechiffre p {
+    width: 95%;
+    margin: 0;
+    text-align: center;
+  }
+  .deuxieme {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  .gauche,
+  .droite {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+  }
+  .droite {
+    width: 100%;
+    margin: 0;
+  }
+  .gauche {
+    align-items: center;
+  }
+  .fond {
+    width: 100%;
+    margin: 0;
+  }
+  .gauche p {
+    text-align: center;
+  }
+  .gauche div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bas {
+    display: flex;
+    flex-direction: column;
+  }
+  .notFound {
+    border: solid red 3px;
+  }
+
+  /* footer */
+  footer {
+    height: 800px;
+  }
+  .elements {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .prem1,
+  .prem2 {
+    width: 95%;
+  }
+  .iconFooter img {
+    height: 30px;
+    width: 30px;
+  }
+  .haut {
+    width: 100%;
+  }
+  .basChild {
+    display: flex;
+    justify-content: space-between;
+  }
+  .basChild p {
+    text-align: center;
+  }
+}
