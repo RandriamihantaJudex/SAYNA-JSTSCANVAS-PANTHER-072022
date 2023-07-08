@@ -31,7 +31,6 @@ let nombre = 0;
 
 //////////////////// ajouter un element dans le carousell
 
-
 const oneMoreContent = () => {
   if (nombre > personnage.length - 1) {
     nombre = 0;
@@ -57,7 +56,7 @@ const oneMoreContent = () => {
 
 /////////////// fonction pour faire defiler le caroussel
 const plus = () => {
-  scroll.scrollLeft += persoCarte.clientWidth;
+  // scroll.scrollLeft += persoCarte.clientWidth;
   parent.removeChild(parent.firstChild);
   oneMoreContent();
   parent.removeChild(parent.firstChild);
@@ -68,7 +67,6 @@ testBtn.addEventListener("click", plus);
 /////////////// fonction qui place a gauche l'element selectionne
 function selection() {
   let clique = 0;
-
   while (parent.children[0] != this) {
     parent.removeChild(parent.children[0]);
     clique++;
@@ -86,13 +84,30 @@ const AddEventClick = () => {
 };
 AddEventClick();
 
-let personnage2 = document.querySelector(".personnage");
-function suck(params) {
-  if(window.scrollY>personnage2.scrollY){
-    // personnage2.style.backgroundColor='red'
-    console.log(personnage2);
+let apearProgressive = document.querySelectorAll(".abra");
+apearProgressive.forEach((Element) => {
+  Element.style.display = "none";
+});
+
+const test = (element) => {
+  let nombre = apearProgressive.length - 1;
+  while (nombre != apearProgressive[nombre]) {
+    apearProgressive[nombre].style.display = "none";
   }
-}
-window.addEventListener('scroll',suck)
+  console.log("test");
+};
 
+// affiche progrissevement les elements au fur a mesure du scroll
 
+const cubeComponent = (element, pointApear) => {
+  if (window.scrollY > pointApear) {
+    element.style.display = "flex";
+  }
+};
+
+window.addEventListener("scroll", () => {
+  apearProgressive[0].style.display = "flex";
+  cubeComponent(apearProgressive[1], 230);
+  cubeComponent(apearProgressive[2], 2000);
+  cubeComponent(apearProgressive[3], 2700);
+});

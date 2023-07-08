@@ -22,7 +22,10 @@
 body{
     background-image: url("../Illustrations + Logo/All\ pages/arrière_plan.png");
     animation: fadeIn 2s;
-}
+     cursor:url('../Illustrations\ +\ Logo/Accueil/logo_souris_BP2_blanc.png'),auto;
+
+}      
+
 a{
     text-decoration: none;
     color: white;
@@ -42,6 +45,7 @@ p{
     padding: 0;
     margin: 0;
 }
+
 .centrer{
     display: flex;
     justify-content: center;
@@ -55,6 +59,7 @@ width: 25px;
 margin-left: 50px;
 display: flex;
 justify-content: space-between;
+animation: fly 3s;
 }
 .ligne{
     height: 100%;
@@ -88,9 +93,10 @@ justify-content: space-between;
 /* PARTIE ACCEUIL */
 
 header{
-    height: 600px;
+    height: 650px;
     width: 100%;
 }
+
 .saynaXmarvel a{
     display: flex;
     align-items: center;
@@ -172,14 +178,14 @@ nav{
     align-items: center;
     justify-content: flex-end;
     animation: fadeIn 2s;
-    overflow-x: scroll;
-    overflow-y: visible;
     scrollbar-width: none;
+    overflow: hidden;
+    display: none;
 }
 .testDiv{
     height: 100%;
     width: 200%;
-    overflow: visible;
+    scrollbar-width: none;
 }
 .testDiv div{
     height: 100%;
@@ -197,7 +203,6 @@ animation: 1s;
 .imageCaroussel{
     width: 60%;
     height: 100%;
-    cursor: pointer;
 }
 .imageCaroussel:hover{
     width: 65%;
@@ -294,6 +299,7 @@ description de black panther */
     width: 100%;
     height: auto;
     display: flex;
+    animation: fadeIn 2s;
 }
 .prince p{
     font-size: 12px;
@@ -386,6 +392,7 @@ description de black panther */
     width: 100%;
     background-image: url("../Illustrations + Logo/Accueil/Pantherhome7.png");
     background-size: 100%;
+    animation: fadeIn 2s;
 }
 .carteFormulaire{
     height: 70%;
@@ -506,7 +513,7 @@ footer{
     height: 500px;
     width: 100%;
     background:linear-gradient(180deg, #07338C 0%, #021740 20%); 
-    /* background-image: url("../Illustrations + Logo/All\ pages/back_footer.png"); */
+    animation: fadeIn 2s;
 }
 .elements{
     height: 350px;
@@ -627,7 +634,7 @@ margin: 0px 4px;
     font-family: Cantarell;
 }
 .espacement{
-    height: 150px;
+    /* height: 150px; */
 }
 
 .ConteneurPrincipale{
@@ -642,7 +649,12 @@ margin: 0px 4px;
 .propos a:hover{
 text-decoration: underline;
 }
-
+.imageCurseur{
+    /* display: none; */
+    height:0px;
+    width: 0px;
+    background-color: red;
+}
 /* ANIMATION */
 
 @keyframes fadeIn{
@@ -662,7 +674,14 @@ text-decoration: underline;
          margin-top:0px;
     }
 }
-
+@keyframes fly {
+    0%{
+        margin-top: -100%;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
 
 
 .active{
@@ -814,3 +833,6 @@ text-decoration: underline;
     }
    
 }
+/* .conteneur{
+    display: none;
+} */
